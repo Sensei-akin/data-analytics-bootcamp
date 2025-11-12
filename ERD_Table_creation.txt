@@ -1,0 +1,32 @@
+Assignment Instructions: Spreadsheet Creation from ERD
+Your assignment is to create a spreadsheet based on the ERD (Entity Relationship Diagram) provided for Parch & Posey. Please follow these instructions carefully:
+
+1. Spreadsheet Structure
+Each sheet in your spreadsheet should represent one table from the ERD:
+accounts
+orders
+web_events
+sales_reps
+region
+2. Populating the Sheets
+Each table/sheet must have at least 10 rows of example data.
+Each row should include realistic sample values for every column listed in the ERD.
+Primary keys (PK) must be unique for each row.
+Foreign keys (FK) should reference valid primary keys from the related tables.
+3. Table Details
+accounts
+Columns: id (PK), name, website, lat, long, primary_poc, sales_rep_id (FK)
+orders
+Columns: id (PK), account_id (FK), standard_qty, poster_qty, total, standard_amt_usd, gloss_amt_usd, poster_amt_usd, total_amt_usd
+web_events
+Columns: id (PK), account_id (FK), occurred_at, channel
+sales_reps
+Columns: id (PK), name, region_id (FK)
+region
+Columns: id (PK), name
+4. Important Notes
+Always ensure primary keys are unique and present for every row.
+Foreign keys must reference valid entries in the related table (for example, sales_rep_id in accounts should match an id in sales_reps).
+Populate each sheet with at least 10 example rows.
+Use realistic and consistent data across all tables.
+Good luck, and remember: the primary key is your best friend—never forget to include it!
