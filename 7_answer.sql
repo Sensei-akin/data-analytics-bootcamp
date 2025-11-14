@@ -1,0 +1,3 @@
+SELECT*
+FROM film
+WHERE title = 'ACADEMY DINOSAUR';
